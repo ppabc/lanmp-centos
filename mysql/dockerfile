@@ -6,4 +6,4 @@ ENV TZ "Asia/Shanghai"
 COPY my.cnf /etc/my.cnf
 COPY startup.sh /startup.sh
 
-RUN chmod +x /startup.sh  && bash /startup.sh
+
