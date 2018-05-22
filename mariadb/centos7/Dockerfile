@@ -14,7 +14,6 @@ LABEL \
 	license="MIT" \
 	build-date="2018-05-22"
 
-
 ###
 ### Envs
 ###
@@ -126,18 +125,15 @@ RUN \
 	echo "!includedir ${MYSQL_CUST_INCL1}/"                >> /etc/my.cnf && \
 	echo "!includedir ${MYSQL_CUST_INCL2}/"                >> /etc/my.cnf
 
-
 ##
 ## Bootstrap Scipts
 ##
 COPY ./scripts/docker-entrypoint.sh /
 
-
 ##
 ## Ports
 ##
 EXPOSE 3306
-
 
 ##
 ## Volumes
@@ -147,7 +143,6 @@ VOLUME /var/log/mysql
 VOLUME /var/sock/mysqld
 VOLUME /etc/mysql/conf.d
 VOLUME /etc/mysql/docker-default.d
-
 
 ##
 ## Entrypoint
